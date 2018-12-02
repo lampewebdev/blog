@@ -7,7 +7,9 @@ export default () => (
       backgroundColor: '#37a99a',
       paddingTop: '10px',
       paddingBottom: '10px',
-      boxShadow: '0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)',
+      paddingLeft: '15px',
+      boxShadow:
+        `0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)`,
     }}
   >
     <Link to="/">

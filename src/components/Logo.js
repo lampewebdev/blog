@@ -21,7 +21,7 @@ export default () => (
       <Img
         fixed={data.placeholderImage.childImageSharp.fixed}
         style={{
-          display: 'flex'
+          display: 'flex',
         }}
       />
     }
