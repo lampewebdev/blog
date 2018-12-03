@@ -8,11 +8,12 @@ export default () => (
       paddingTop: '10px',
       paddingBottom: '10px',
       paddingLeft: '15px',
+      textAlign: 'center',
       boxShadow:
         `0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)`,
     }}
   >
-    <Link to="/">
+    <Link to="  /">
       <Logo />
     </Link>
   </h1>

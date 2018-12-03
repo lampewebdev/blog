@@ -9,7 +9,7 @@ export default () => (
         placeholderImage: file(
             relativePath: { eq: "logoWithoutFont.png" }
           ) {
-          childImageSharp {
+            childImageSharp {
             fixed(height: 60) {
               ...GatsbyImageSharpFixed
             }
@@ -20,9 +20,6 @@ export default () => (
     render={data =>
       <Img
         fixed={data.placeholderImage.childImageSharp.fixed}
-        style={{
-          display: 'flex',
-        }}
       />
     }
   />
