@@ -9,10 +9,6 @@ const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-  box-shadow: 
-    rgba(0, 0, 0, 0.14) 0px 2px 2px 0px,
-    rgba(0, 0, 0, 0.2) 0px 3px 1px -2px,
-    rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
 `
 
 const Date = styled.div`
@@ -29,6 +25,9 @@ const Excerpt = styled.p`
 const Header = styled.h1`
   padding: 15px;
 `
+const ListItem = styled.div`
+
+`
 
 const IndexPage = props => {
   const postList = props.data.allMarkdownRemark
@@ -37,11 +36,11 @@ const IndexPage = props => {
       {postList.edges.map(({ node }, i) => (
         <Container>
           <Link to={node.fields.slug} className="link" key={i}>
-            <div className="post-list-item">
+            <ListItem>
               <Header>{node.frontmatter.title}</Header>
               <Date>{node.frontmatter.date}</Date>
               <Excerpt>{node.excerpt}</Excerpt>
-            </div>
+            </ListItem>
           </Link>
         </Container>
       ))}
