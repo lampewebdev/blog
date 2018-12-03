@@ -22,7 +22,7 @@ module.exports = {
         start_url: '/',
         background_color: '#37A99A',
         theme_color: '#37A99A',
-        display: 'minimal-ui',
+        display: 'fullscreen',
         icon: 'src/images/logoWithoutFont.png',
       },
     },
