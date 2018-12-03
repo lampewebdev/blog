@@ -1,8 +1,24 @@
 import React from 'react'
 import Layout from '../components/layout'
 import Img from 'gatsby-image'
-import Metatags from '../components/Metatags'
 import { graphql } from 'gatsby'
+import styled from 'styled-components'
+import Metatags from '../components/Metatags'
+
+const Container = styled.div`
+  text-decoration: none;
+  max-width: 630px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+`
+const Header = styled.h1`
+  padding: 15px;
+  margin-bottom: 15px;
+`
+const Content = styled.div`
+  padding-top: 15px;
+`
 
 function BlogPost (props) {
   const post = props.data.markdownRemark
@@ -18,11 +34,11 @@ function BlogPost (props) {
         url={url}
         pathname={props.location.pathname}
       />
-      <div>
-        <h1>{title}</h1>
+      <Container>
+        <Header>{title}</Header>
         <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
+        <Content dangerouslySetInnerHTML={{ __html: post.html }} />
+      </Container>
     </Layout>
   )
 }
