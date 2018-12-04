@@ -18,8 +18,6 @@ const Header = styled.h1`
 `
 const Content = styled.div`
   padding-top: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
 `
 
 function BlogPost (props) {

@@ -4,8 +4,15 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import Header from './header'
 import Footer from './footer'
+import styled from 'styled-components'
 import './layout.css'
 
+const Content = styled.div`
+  @media only screen and (max-width: 650px) {
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+`
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -26,13 +33,15 @@ const Layout = ({ children }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
         >
-          <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+          <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js" />
           <html lang="en" />
         </Helmet>
         <div className='content'>
           <div className="content-inside">
             <Header siteTitle={data.site.siteMetadata.title} />
-            {children}
+            <Content>
+              {children}
+            </Content>
           </div>
         </div>
         <Footer />

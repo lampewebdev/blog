@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
 
 html,
 body {
@@ -34,6 +35,8 @@ h1 {
   background-color: #339E90;
   color: #F7F7F7;
   text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Rubik', sans-serif;
 }
 
 a,
