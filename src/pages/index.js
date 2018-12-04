@@ -25,9 +25,6 @@ const Excerpt = styled.p`
 const Header = styled.h1`
   padding: 15px;
 `
-const ListItem = styled.div`
-
-`
 
 const IndexPage = props => {
   const postList = props.data.allMarkdownRemark
@@ -36,11 +33,11 @@ const IndexPage = props => {
       {postList.edges.map(({ node }, i) => (
         <Container key={i}>
           <Link to={node.fields.slug} className="link">
-            <ListItem>
+            <div>
               <Header>{node.frontmatter.title}</Header>
               <Date>{node.frontmatter.date}</Date>
               <Excerpt>{node.excerpt}</Excerpt>
-            </ListItem>
+            </div>
           </Link>
         </Container>
       ))}
