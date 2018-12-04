@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url(http://weloveiconfonts.com/api/?family=zocial);
 
 html,
 body {
@@ -42,15 +41,4 @@ a:visited,
 a:active,
 a:hover {
   text-decoration: none;
-}
-
-[class*="zocial-"]:before {
-  font-family: 'zocial', sans-serif;
-}
-
-[class*="zocial-"]:before {
-  font-size: 1.7em;
-  line-height: 1.8em;
-  color: white;
-  margin-right: 10px;
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { FaGithub, FaTwitter, FaInstagram } from 'react-icons/fa'
 
 const Footer = styled.div`
   background-color: #339E90;
@@ -11,19 +12,25 @@ const Footer = styled.div`
 
   a {
     float: right;
+    padding-left: 5px;
+    svg {
+      color: white;
+      font-size: 40px;
+      padding-top: 5px;
+    }
   }
 `
 
 export default () => (
   <Footer>
     <a href="https://www.instagram.com/lampewebdev/" target="_blank" >
-      <span class="zocial-instagram"></span>
+      <FaInstagram />
     </a>
     <a href="https://github.com/lampewebdev" target="_blank" >
-      <span class="zocial-github"></span>
+      <FaGithub />
     </a>
     <a href="https://twitter.com/lampewebdev" target="_blank">
-      <span class="zocial-twitter"></span>
+      <FaTwitter />
     </a>
   </Footer>
 )

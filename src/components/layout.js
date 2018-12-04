@@ -26,10 +26,11 @@ const Layout = ({ children }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
         >
+          <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
           <html lang="en" />
         </Helmet>
         <div className='content'>
-          <div class="content-inside">
+          <div className="content-inside">
             <Header siteTitle={data.site.siteMetadata.title} />
             {children}
           </div>

@@ -34,8 +34,8 @@ const IndexPage = props => {
   return (
     <Layout>
       {postList.edges.map(({ node }, i) => (
-        <Container>
-          <Link to={node.fields.slug} className="link" key={i}>
+        <Container key={i}>
+          <Link to={node.fields.slug} className="link">
             <ListItem>
               <Header>{node.frontmatter.title}</Header>
               <Date>{node.frontmatter.date}</Date>
