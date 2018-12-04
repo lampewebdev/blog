@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Header from './header'
 import Footer from './footer'
 import styled from 'styled-components'
+import AdSense from 'react-adsense'
 import './layout.css'
 
 const Content = styled.div`
@@ -35,6 +36,11 @@ const Layout = ({ children }) => (
         >
           <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js" />
           <html lang="en" />
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <AdSense.Google
+            client='ca-pub-5940437378624677'
+            slot='7806394621'
+          />
         </Helmet>
         <div className='content'>
           <div className="content-inside">

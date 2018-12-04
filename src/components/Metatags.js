@@ -56,13 +56,7 @@ function Metatags (props) {
         { property: 'og:site_name', content: 'https://lampewebdev.github.io/' },
       ]}
     >
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
-      <script>
-        {(adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: 'ca-pub-5940437378624677',
-          enable_page_level_ads: true
-        })};
-      </script>
+
       <html lang="en" />
     </Helmet>
   )
