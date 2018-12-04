@@ -1,20 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url(http://weloveiconfonts.com/api/?family=brandico);
+@import url(http://weloveiconfonts.com/api/?family=zocial);
 
-[class*="brandico-"]:before {
-  font-family: 'brandico', sans-serif;
-
-}
-[class*="brandico-"] {
-font-size: 2.5em;
-line-height: 1.5em;
-content: "D";
-height:25px;
-font: 400 1.2em/1.6em "Lato", sans-serif;
-font-size: 1.2em;
-line-height: 1.6em;
-color: #333;
-}
 html,
 body {
   box-sizing: border-box;
@@ -23,11 +9,11 @@ body {
   margin: 0;
 }
 
-#___gatsby{
+#___gatsby {
   height: 100%;
 }
 
-#___gatsby > * {
+#___gatsby>* {
   height: 100%;
 }
 
@@ -56,4 +42,15 @@ a:visited,
 a:active,
 a:hover {
   text-decoration: none;
+}
+
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+[class*="zocial-"]:before {
+  font-size: 1.7em;
+  line-height: 1.8em;
+  color: white;
+  margin-right: 10px;
 }
