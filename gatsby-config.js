@@ -28,13 +28,13 @@ module.exports = {
     },
     'gatsby-plugin-styled-components',
     'gatsby-plugin-offline',
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${ __dirname }/src/pages`,
-    //     name: 'pages',
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${ __dirname }/src/pages`,
+        name: 'pages',
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
