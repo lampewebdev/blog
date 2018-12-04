@@ -23,13 +23,28 @@ const Footer = styled.div`
 
 export default () => (
   <Footer>
-    <a href="https://www.instagram.com/lampewebdev/" target="_blank" >
+    <a
+      href="https://www.instagram.com/lampewebdev"
+      aria-label="instagram"
+      target="_blank"
+      rel="noreferrer"
+    >
       <FaInstagram />
     </a>
-    <a href="https://github.com/lampewebdev" target="_blank" >
+    <a
+      href="https://github.com/lampewebdev"
+      aria-label="github"
+      target="_blank"
+      rel="noreferrer"
+    >
       <FaGithub />
     </a>
-    <a href="https://twitter.com/lampewebdev" target="_blank">
+    <a
+      href="https://twitter.com/lampewebdev"
+      aria-label="Twitter"
+      target="_blank"
+      rel="noreferrer"
+    >
       <FaTwitter />
     </a>
   </Footer>

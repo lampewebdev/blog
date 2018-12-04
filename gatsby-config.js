@@ -18,7 +18,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'Lampe Web Dev Blog',
-        short_name: 'Lampe Web Dev',
+        short_name: 'Lampe Blog',
         start_url: '/',
         background_color: '#339E90',
         theme_color: '#339E90',
