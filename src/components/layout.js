@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import Header from './header'
+import Footer from './footer'
 import './layout.css'
 
 const Layout = ({ children }) => (
@@ -17,7 +18,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <Fragment>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -27,11 +28,14 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div>
-          {children}
+        <div className='content'>
+          <div class="content-inside">
+            <Header siteTitle={data.site.siteMetadata.title} />
+            {children}
+          </div>
         </div>
-      </>
+        <Footer />
+      </Fragment>
     )}
   />
 )
