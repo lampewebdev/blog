@@ -36,7 +36,10 @@ const Layout = ({ children }) => (
         >
           <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js" />
           <html lang="en" />
-          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <script
+            async
+            src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+          />
           <AdSense.Google
             client='ca-pub-5940437378624677'
             slot='7806394621'

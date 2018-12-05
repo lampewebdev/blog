@@ -45,3 +45,7 @@ a:active,
 a:hover {
   text-decoration: none;
 }
+
+p > img{
+  width: 630px;
+}
